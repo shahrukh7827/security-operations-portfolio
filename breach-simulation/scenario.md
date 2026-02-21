@@ -1,3 +1,5 @@
-Suspicious login activity detected from unknown IP.
+## Incident Description
 
-Investigation started to determine possible breach.
+Security monitoring detected abnormal authentication attempts targeting an administrative account. The login originated from an IP address not previously associated with the user.
+
+The pattern indicated possible credential misuse or brute force activity.
