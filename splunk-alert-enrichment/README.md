@@ -1,42 +1,33 @@
 # Splunk Alert Enrichment Automation
 
-## Overview
-This project simulates a real SOC workflow where a Splunk alert triggers automated enrichment of suspicious IP addresses using external threat intelligence.
-
-The goal is to demonstrate detection engineering combined with automation to reduce analyst triage time.
+## What this project is
+This project shows how a security team can detect suspicious activity in Splunk and automatically enrich alerts with additional information to help analysts investigate faster.
 
 ---
 
-## Architecture
-
-Detection (Splunk) → Alert → Automation Script → Enrichment → Analyst Review
-
----
-
-## Use Case
-Detect multiple failed logins and enrich source IP with contextual intelligence.
+## How it works
+1. Splunk detects suspicious login attempts
+2. Alert is generated
+3. Python script checks IP information
+4. Analyst reviews enriched alert
 
 ---
 
-## Tools Used
-- Splunk SIEM
-- Python
-- Threat intelligence lookup
-- SOC workflows
+## Files in this project
+- splunk_query.spl → detection rule
+- enrich_alert.py → automation script
+- workflow.md → process explanation
 
 ---
 
-## Skills Demonstrated
-- Detection engineering
+## Skills shown
+- SIEM monitoring
+- SOC workflow understanding
 - Alert triage
-- Automation mindset
-- Threat analysis
-- Blue team operations
+- Automation thinking
+- Cybersecurity operations
 
 ---
 
-## Future Improvements
-- Risk scoring
-- Automated response
-- Dashboard visualization
-- SOAR integration
+## Why this matters
+Automation helps reduce investigation time and improves incident response efficiency in real SOC environments.
